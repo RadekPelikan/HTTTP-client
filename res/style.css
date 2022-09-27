@@ -4,7 +4,7 @@ body {
 }
 
 * {
-  font-family: Verdana, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .wrapper {
@@ -18,7 +18,7 @@ body {
 
 form {
   color: white;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .list-choice {

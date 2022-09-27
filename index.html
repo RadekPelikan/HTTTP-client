@@ -19,9 +19,9 @@
 
             <div class="list-choice">
                 <div class="list-choice-title">METHOD</div>
-                <div class="list-choice-objects">
+                <div class="list-choice-objects show">
                     <label>
-                        <input value="GET" type="radio" name="method" /> <span>GET</span>
+                        <input value="GET" type="radio" name="method" checked /> <span>GET</span>
                     </label>
                     <label>
                         <input value="POST" type="radio" name="method" /> <span>POST</span>
@@ -36,9 +36,11 @@
             </div>
 
             <label for="url">URL</label>
-            <input type="url">
+            <input type="text" id="url">
 
-            <button type="submit">SEND</button>
+            <button type="submit" id="send">SEND</button>
+
+            <textarea name="" id="body-json" cols="30" rows="10"></textarea>
         </form>
     </div>
 </body>
