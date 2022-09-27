@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="res/style.css">
+    <script defer src="res/main.js"></script>
+    <title>HTTTP client</title>
 </head>
+
 <body>
-    <form>
+    <div class="wrapper">
 
-        <label for="cars">Choose method</label>
-        <select name="cars" id="cars">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-        </select>
+        <form>
 
-        <label for="url">URL: </label>
-        <input name="url" type="text">
 
-        <button type="submit">SEND</button>
-    </form>
+
+            <div class="list-choice">
+                <div class="list-choice-title">METHOD</div>
+                <div class="list-choice-objects">
+                    <label>
+                        <input value="GET" type="radio" name="method" /> <span>GET</span>
+                    </label>
+                    <label>
+                        <input value="POST" type="radio" name="method" /> <span>POST</span>
+                    </label>
+                    <label>
+                        <input value="PATCH" type="radio" name="method" /> <span>PATCH</span>
+                    </label>
+                    <label>
+                        <input value="DELETE" type="radio" name="method" /> <span>DELETE</span>
+                    </label>
+                </div>
+            </div>
+
+            <label for="url">URL</label>
+            <input type="url">
+
+            <button type="submit">SEND</button>
+        </form>
+    </div>
 </body>
+
 </html>
